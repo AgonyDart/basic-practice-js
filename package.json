@@ -1,0 +1,15 @@
+{
+  "name": "technique-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reverse": "node src/reverse-string.js",
+    "repeat": "node src/repeated-character.js",
+    "hamming": "node src/hamming-distance.js",
+    "counter": "node src/word-counter.js"
+  },
+  "keywords": [],
+  "author": "Angel Duarte",
+  "license": "MIT"
+}
