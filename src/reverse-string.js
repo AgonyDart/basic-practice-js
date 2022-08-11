@@ -1,8 +1,13 @@
-const textPromp = 'winter';
-let textResult = '';
+const input = 'winter';
 
-for (let i = textPromp.length; i >= 0; i--) {
-    textResult += textPromp.charAt(i - 1);
+const reverseString = (text) => {
+    let textResult = '';
+
+    for (let i = text.length; i >= 0; i--) {
+        textResult += text.charAt(i - 1);
+    }
+
+    console.log(`${text} reversed is ${textResult}`);
+    return textResult;
 }
-
-console.log(textResult);
+reverseString(input);

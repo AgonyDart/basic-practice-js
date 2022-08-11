@@ -1,7 +1,12 @@
-let textPromp = '  Lorem ipsum dolor sit amet, consectetur   adipiscing elit. Etiam in orci bibendum, eleifend urna a, euismod nulla. Curabitur viverra libero.  ';
-let count = 0;
+let input = '  Lorem ipsum dolor sit amet, consectetur   adipiscing elit. Etiam in orci bibendum, eleifend urna a, euismod nulla. Curabitur viverra libero.  ';
 
-textPromp = textPromp.trim().split(/\s+/);
+function countWords(text) {
+    text = text.trim().split(/\s+/);
 
-console.log(textPromp);
-console.log(`The text has: ${textPromp.length} words`);
+    console.log(text);
+    console.log(`The text has: ${text.length} words`);
+    return text.length;
+
+}
+
+countWords(input);

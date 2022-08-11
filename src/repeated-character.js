@@ -1,10 +1,16 @@
-const textPromp = "ercffftgvhjAQWSXEfRDCffTFVGffYBHfJ";
+const input = "ercffftgvhjAQWSXEfRDCffTFVGffYBHfJ";
 let charToCount = 'f';
-let counter = 0;
 
-for (const char of textPromp) {
-    if (char === charToCount)
-        counter++
+function countRepeated(text, character) {
+    let counter = 0;
+
+    for (const char of text) {
+        if (char === character)
+            counter++
+    }
+
+    console.log(`${charToCount} appears ${counter} times in the text`)
+    return counter;
 }
 
-console.log(`${charToCount} appears ${counter} times in the text`)
+countRepeated(input, charToCount);

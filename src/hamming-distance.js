@@ -1,17 +1,23 @@
-let text_1 = 'Microsoft';
-let text_2 = 'M1cr0s0ft';
-let distance = 0;
+let input_1 = 'Microsoft';
+let input_2 = 'M1cr0s0ft';
 
-try {
-    if (text_1.length != text_2.length) {
-        throw 'diferrent distances';
-    } else {
-        for (let i = 0; i < text_1.length; i++) {
-            if (text_1.charAt(i) != text_2.charAt(i))
-                distance++;
+const hamming = (string1, string2) => {
+    let distance = 0;
+    try {
+        if (string1.length != string2.length) {
+            throw 'diferrent distances';
+        } else {
+            for (let i = 0; i < string1.length; i++) {
+                if (string1.charAt(i) != string2.charAt(i))
+                    distance++;
+            }
+
+            console.log(`The distance is: ${distance}`);
+            return distance;
         }
-        console.log(`The distance is: ${distance}`);
+    } catch (error) {
+        console.log(error);
     }
-} catch (error) {
-    console.log(error);
 }
+
+hamming(input_1, input_2);
