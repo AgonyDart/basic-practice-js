@@ -7,7 +7,8 @@
     "reverse": "node src/reverse-string.js",
     "repeat": "node src/repeated-character.js",
     "hamming": "node src/hamming-distance.js",
-    "counter": "node src/word-counter.js"
+    "counter": "node src/word-counter.js",
+    "type": "node src/character-type.js"
   },
   "keywords": [],
   "author": "Angel Duarte",
